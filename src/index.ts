@@ -4,6 +4,7 @@ import express from "express";
 import { ApolloServer } from "apollo-server-express";
 import { buildSchema } from "type-graphql";
 // import { User } from "./entity/User"; //Not using this.
+import { Mountain } from "./entity/Mountain";
 import { graphql } from "graphql";
 import { MountainResolver } from "./resolvers/MountainResolver";
 // import { typeDefs } from "./schema"; // Not using this.
@@ -41,8 +42,17 @@ import { AreaResolver } from "./resolvers/AreaResolver";
   //   const apolloServer = new ApolloServer({ typeDefs, resolvers });
   apolloServer.applyMiddleware({ app });
 
+  app.use(express.static("public"));
+
   const PORT = process.env.PORT || 4000;
   app.listen(PORT, () => {
     console.log("express server started.");
   });
 })();
+
+// const mountain = new Mountain();
+//   mountain.name = "Timber";
+//   mountain.elevation = 1111;
+//   mountain.coordinates = "dummy";
+//   mountain.areaId = 1;
+//   await Mountain.save(mountain);
