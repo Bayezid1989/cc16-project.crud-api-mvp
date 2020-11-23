@@ -27,21 +27,6 @@ class MountainInput {
 }
 
 @InputType()
-class MountainOutput {
-  @Field()
-  name: string;
-
-  @Field(() => Int)
-  elevation: number;
-
-  @Field()
-  coordinates: string;
-
-  @Field({ nullable: true })
-  area: string;
-}
-
-@InputType()
 class MountainUpdateInput {
   @Field(() => String, { nullable: true })
   name?: string;

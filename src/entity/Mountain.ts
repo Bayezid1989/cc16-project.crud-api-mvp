@@ -24,8 +24,8 @@ export class Mountain extends BaseEntity {
   @Column("int")
   elevation: number;
 
-  @Field({ nullable: true })
-  @Column({ nullable: true })
+  @Field()
+  @Column()
   coordinates: string;
 
   @Field({ nullable: true })
