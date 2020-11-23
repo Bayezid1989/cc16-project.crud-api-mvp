@@ -1,4 +1,4 @@
-# CC16 project API MVP
+# CC16 project CRUD API MVP
 
 This was created during my time as a student at Code Chrysalis,
 under the instruction ath the very bottom.
