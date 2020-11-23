@@ -4,8 +4,8 @@ import express from "express";
 import { ApolloServer } from "apollo-server-express";
 import { buildSchema } from "type-graphql";
 // import { User } from "./entity/User"; //Not using this.
-import { Mountain } from "./entity/Mountain";
-import { graphql } from "graphql";
+// import { Mountain } from "./entity/Mountain";
+// import { graphql } from "graphql";
 import { MountainResolver } from "./resolvers/MountainResolver";
 // import { typeDefs } from "./schema"; // Not using this.
 // import { resolvers } from "./resolvers"; // Not using this.
@@ -40,9 +40,9 @@ import { AreaResolver } from "./resolvers/AreaResolver";
   apolloServer.applyMiddleware({ app, cors: false });
 
   //   const apolloServer = new ApolloServer({ typeDefs, resolvers });
-  apolloServer.applyMiddleware({ app });
+  // apolloServer.applyMiddleware({ app });
 
-  app.use(express.static("public"));
+  app.use(express.static("../public"));
 
   const PORT = process.env.PORT || 4000;
   app.listen(PORT, () => {

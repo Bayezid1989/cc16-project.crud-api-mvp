@@ -20,6 +20,10 @@ export class Area extends BaseEntity {
   @Column()
   name: string;
 
+  // @Field()
+  // @Column()
+  // country: string;
+
   // @Field(() => Mountain, { nullable: true })
   // @OneToMany(() => Mountain, (mountain) => mountain.area, {
   //   nullable: true,

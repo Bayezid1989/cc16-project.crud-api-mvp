@@ -1,11 +1,11 @@
 import { Field, Int, ObjectType } from "type-graphql";
 import {
-  Column,
   Entity,
   PrimaryGeneratedColumn,
   BaseEntity,
   ManyToOne,
   RelationId,
+  Column,
 } from "typeorm";
 import { Area } from "./Area";
 
@@ -28,9 +28,13 @@ export class Mountain extends BaseEntity {
   @Column({ nullable: true })
   coordinates: string;
 
-  @Field(() => Area, { nullable: true })
-  @ManyToOne(() => Area, (area) => area.id, { nullable: true })
-  area: Area;
-  @RelationId((mountain: Mountain) => mountain.area)
-  areaId: number;
+  @Field({ nullable: true })
+  @Column({ nullable: true })
+  area: string;
+
+  //   @Field(() => Area, { nullable: true })
+  //   @ManyToOne(() => Area, { nullable: true })
+  //   area: Area;
+  //   @RelationId((mountain: Mountain) => mountain.area)
+  //   areaId: number;
 }

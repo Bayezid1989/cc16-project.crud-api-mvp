@@ -7,6 +7,7 @@ import {
   InputType,
   Field,
 } from "type-graphql";
+import { MoreThan } from "typeorm";
 import { Mountain } from "../entity/Mountain";
 import { Area } from "../entity/Area";
 
@@ -26,6 +27,21 @@ class MountainInput {
 }
 
 @InputType()
+class MountainOutput {
+  @Field()
+  name: string;
+
+  @Field(() => Int)
+  elevation: number;
+
+  @Field()
+  coordinates: string;
+
+  @Field({ nullable: true })
+  area: string;
+}
+
+@InputType()
 class MountainUpdateInput {
   @Field(() => String, { nullable: true })
   name?: string;
@@ -36,8 +52,8 @@ class MountainUpdateInput {
   @Field({ nullable: true })
   coordinates?: string;
 
-  @Field(() => Int, { nullable: true })
-  areaId: number;
+  @Field({ nullable: true })
+  area: string;
 }
 
 @Resolver()
@@ -61,16 +77,39 @@ export class MountainResolver {
 
   @Mutation(() => Boolean)
   async deleteMountain(@Arg("id", () => Int) id: number) {
-    await Mountain.delete({ id });
+    const mountain = await Mountain.findOne({ where: { id: id } });
+    if (!mountain) throw new Error("Mountain not found!!");
+    // await Mountain.delete({ id });
+    await mountain.remove();
     return true;
   }
 
   @Query(() => [Mountain])
   async mountains() {
-    return Mountain.find({ relations: ["area"] });
+    return Mountain.find({
+      order: {
+        id: "ASC",
+      },
+    });
     // const mountain = await Mountain.createQueryBuilder("mountains")
     //   .leftJoinAndSelect(Area, "area", "area.id = mountain.areaId")
     //   .getRawMany();
     // return mountain;
+  }
+
+  @Query(() => Mountain)
+  async mountainByName(@Arg("name") name: string) {
+    // return Mountain.findOne({ relations: ["area"], where: { name: name } });
+    return Mountain.findOne({ where: { name: name } });
+  }
+
+  @Query(() => [Mountain])
+  async mountainsByArea(@Arg("area") area: string) {
+    return Mountain.find({ where: { area: area } });
+  }
+
+  @Query(() => [Mountain])
+  async mountainsByElevationMoreThan(@Arg("elevation") elevation: number) {
+    return Mountain.find({ where: { elevation: MoreThan(elevation) } });
   }
 }
