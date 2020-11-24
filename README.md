@@ -5,7 +5,7 @@ under the instruction ath the very bottom.
 
 ## Mountains API
 
-(./images/yarigatake.jpg)
+![mountain](./images/yarigatake.jpg)
 
 This API enebles you to CRUD (create, read, update and delete) mountain data.
 
@@ -35,7 +35,7 @@ Here are the methods you can use.
 Mountain and area table are supposed be connected using foreign key, but still under construction.
 And it's not on service and not accessibe via web.
 You can use GrappfQL Playground as UI for now (https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/)
-(./images/screenshot_graphql.jpg)
+![graphql](./images/screenshot_graphql.jpg)
 
 - Technologies
 
