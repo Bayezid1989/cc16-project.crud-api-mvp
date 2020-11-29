@@ -82,6 +82,7 @@ Here are the methods(resolvers) you can use.
 - `addRouteMountain` --- insert a route-mountain pair
 
 You could refer to src/exampleGqls to see the method examples.
+
 When creating or updatig the mountain table with an areaID, the related moutain data will be added to the matched area's "moutains" array.
 Also when creating or updatig the area table with mountainIds, the areaId will be added to the matched moutains' "areaId".
 On the other hand, moutain and route relations will be made only if you execute "addRouteMountain".
