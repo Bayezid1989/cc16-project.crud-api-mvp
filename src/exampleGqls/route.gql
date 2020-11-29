@@ -1,0 +1,59 @@
+mutation {
+  createRoute(input: { name: "Dai Kiretto", level: 4, estimated_hours: 31 })
+}
+
+mutation {
+  updateRoute(id: 2, input: { level: 5 })
+}
+
+mutation {
+  deleteRoute(id: 3)
+}
+
+query {
+  routes {
+    id
+    name
+    level
+    estimated_hours
+    mountains {
+      name
+      elevation
+    }
+  }
+}
+
+query {
+  routeByName(name: "Dai Kiretto") {
+    name
+    level
+    estimated_hours
+    mountains {
+      name
+    }
+  }
+}
+
+query {
+  routesHigherLevelThan(level: 4) {
+    name
+    level
+    estimated_hours
+    mountains {
+      name
+      elevation
+    }
+  }
+}
+
+query {
+  routesLongerThan(estimated_hours: 25) {
+    name
+    level
+    estimated_hours
+    mountains {
+      name
+      elevation
+    }
+  }
+}

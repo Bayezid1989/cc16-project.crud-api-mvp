@@ -1,0 +1,70 @@
+mutation {
+  createMountain(
+    input: {
+      name: "Yarigatake"
+      elevation: 3180
+      latitude: 36.341944
+      longitude: 137.575869
+      areaId: 1
+    }
+  )
+}
+
+mutation {
+  updateMountain(
+    id: 2
+    input: {
+      name: "Kita Hotakadake"
+      elevation: 3106
+      latitude: 36.302543
+      longitude: 137.652028
+    }
+  )
+}
+
+mutation {
+  deleteMountain(id: 3)
+}
+
+query {
+  mountains {
+    id
+    name
+    elevation
+    latitude
+    longitude
+    routes {
+      name
+      level
+      estimated_hours
+    }
+    area {
+      name
+      country
+    }
+  }
+}
+
+query {
+  mountainByName(name: "Yarigatake") {
+    name
+    elevation
+    routes {
+      name
+      level
+    }
+    area {
+      name
+    }
+  }
+}
+
+query {
+  mountainsHigherThan(elevation: 3100) {
+    name
+    elevation
+    area {
+      name
+    }
+  }
+}

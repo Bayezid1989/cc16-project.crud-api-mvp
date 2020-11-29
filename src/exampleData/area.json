@@ -1,0 +1,50 @@
+{
+    "data": {
+      "areas": [
+        {
+          "id": 1,
+          "name": "Kamikochi",
+          "country": "Japan",
+          "mountains": [
+            {
+              "id": 5,
+              "name": "Oku Hotakadake",
+              "elevation": 3190
+            },
+            {
+              "id": 2,
+              "name": "Kita Hotakadake",
+              "elevation": 3106
+            },
+            {
+              "id": 3,
+              "name": "Minamidake",
+              "elevation": 3033
+            },
+            {
+              "id": 1,
+              "name": "Yarigatake",
+              "elevation": 3180
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Shin Hotaka Onsen",
+          "country": "Japan",
+          "mountains": [
+            {
+              "id": 6,
+              "name": "Gendarme",
+              "elevation": 3163
+            },
+            {
+              "id": 4,
+              "name": "Nishi Hotakadake",
+              "elevation": 2909
+            }
+          ]
+        }
+      ]
+    }
+  }

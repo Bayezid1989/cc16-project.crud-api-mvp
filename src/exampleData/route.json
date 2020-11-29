@@ -1,0 +1,57 @@
+{
+    "data": {
+      "routes": [
+        {
+          "id": 1,
+          "name": "Dai Kiretto",
+          "level": 4,
+          "estimated_hours": 31,
+          "mountains": [
+            {
+              "id": 1,
+              "name": "Yarigatake",
+              "elevation": 3180
+            },
+            {
+              "id": 2,
+              "name": "Kita Hotakadake",
+              "elevation": 3106
+            },
+            {
+              "id": 3,
+              "name": "Minamidake",
+              "elevation": 3033
+            },
+            {
+              "id": 5,
+              "name": "Oku Hotakadake",
+              "elevation": 3190
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Oku-Nishi Hotaka Juso",
+          "level": 5,
+          "estimated_hours": 25,
+          "mountains": [
+            {
+              "id": 4,
+              "name": "Nishi Hotakadake",
+              "elevation": 2909
+            },
+            {
+              "id": 6,
+              "name": "Gendarme",
+              "elevation": 3163
+            },
+            {
+              "id": 5,
+              "name": "Oku Hotakadake",
+              "elevation": 3190
+            }
+          ]
+        }
+      ]
+    }
+  }

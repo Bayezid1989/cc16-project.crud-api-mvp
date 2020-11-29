@@ -5,7 +5,6 @@ import {
   PrimaryGeneratedColumn,
   BaseEntity,
   OneToMany,
-  RelationId,
 } from "typeorm";
 import { Mountain } from "./Mountain";
 
@@ -20,14 +19,13 @@ export class Area extends BaseEntity {
   @Column()
   name: string;
 
-  // @Field()
-  // @Column()
-  // country: string;
+  @Field({ nullable: true })
+  @Column({ nullable: true })
+  country: string;
 
-  // @Field(() => Mountain, { nullable: true })
-  // @OneToMany(() => Mountain, (mountain) => mountain.area, {
-  //   nullable: true,
-  //   cascade: true,
-  // })
-  // mountains: Mountain[];
+  @Field(() => [Mountain], { nullable: true })
+  @OneToMany(() => Mountain, (mountain) => mountain.area, {
+    nullable: true,
+  })
+  mountains: Mountain[];
 }

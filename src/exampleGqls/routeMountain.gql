@@ -1,0 +1,3 @@
+mutation {
+  addRouteMountain(routeId: 1, mountainId: 1)
+}

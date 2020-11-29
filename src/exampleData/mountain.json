@@ -1,0 +1,132 @@
+{
+    "data": {
+      "mountains": [
+        {
+          "id": 1,
+          "name": "Yarigatake",
+          "elevation": 3180,
+          "latitude": 36.341944,
+          "longitude": 137.575869,
+          "routes": [
+            {
+              "id": 1,
+              "name": "Dai Kiretto",
+              "level": 4,
+              "estimated_hours": 31
+            }
+          ],
+          "area": {
+            "id": 1,
+            "name": "Kamikochi",
+            "country": "Japan"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Kita Hotakadake",
+          "elevation": 3106,
+          "latitude": 36.302543,
+          "longitude": 137.652028,
+          "routes": [
+            {
+              "id": 1,
+              "name": "Dai Kiretto",
+              "level": 4,
+              "estimated_hours": 31
+            }
+          ],
+          "area": {
+            "id": 1,
+            "name": "Kamikochi",
+            "country": "Japan"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Minamidake",
+          "elevation": 3033,
+          "latitude": 36.320867690157236,
+          "longitude": 137.6516426765234,
+          "routes": [
+            {
+              "id": 1,
+              "name": "Dai Kiretto",
+              "level": 4,
+              "estimated_hours": 31
+            }
+          ],
+          "area": {
+            "id": 1,
+            "name": "Kamikochi",
+            "country": "Japan"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Nishi Hotakadake",
+          "elevation": 2909,
+          "latitude": 36.27988932584872,
+          "longitude": 137.62950495368145,
+          "routes": [
+            {
+              "id": 2,
+              "name": "Oku-Nishi Hotaka Juso",
+              "level": 5,
+              "estimated_hours": 25
+            }
+          ],
+          "area": {
+            "id": 2,
+            "name": "Shin Hotaka Onsen",
+            "country": "Japan"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Oku Hotakadake",
+          "elevation": 3190,
+          "latitude": 36.290657853463465,
+          "longitude": 137.6479692540915,
+          "routes": [
+            {
+              "id": 2,
+              "name": "Oku-Nishi Hotaka Juso",
+              "level": 5,
+              "estimated_hours": 25
+            },
+            {
+              "id": 1,
+              "name": "Dai Kiretto",
+              "level": 4,
+              "estimated_hours": 31
+            }
+          ],
+          "area": {
+            "id": 1,
+            "name": "Kamikochi",
+            "country": "Japan"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Gendarme",
+          "elevation": 3163,
+          "latitude": 36.2876180814735,
+          "longitude": 137.6431336282963,
+          "routes": [
+            {
+              "id": 2,
+              "name": "Oku-Nishi Hotaka Juso",
+              "level": 5,
+              "estimated_hours": 25
+            }
+          ],
+          "area": {
+            "id": 2,
+            "name": "Shin Hotaka Onsen",
+            "country": "Japan"
+          }
+        }
+      ]
+    }
+  }

@@ -1,0 +1,25 @@
+mutation {
+  createArea(
+    input: { name: "Kamikochi", country: "Japan" }
+    mountainIds: [1, 2]
+  )
+}
+
+mutation {
+  updateArea(id: 2, input: { name: "Shin Hotaka Onsen" }, mountainIds: [4])
+}
+
+mutation {
+  deleteArea(id: 3)
+}
+
+query {
+  areas {
+    id
+    name
+    mountains {
+      name
+      elevation
+    }
+  }
+}
