@@ -3,6 +3,15 @@
 This was created during my time as a student at Code Chrysalis.
 Main focus is on manipulating database using GraphQL and TypeORM.
 
+### Technologies
+
+- TypeGraphQL
+- Apollo server
+- Express
+- NodeJS
+- TypeORM
+- postgres
+
 ## Mountains API
 
 This beautiful view below is from the peak of Oku Hotakadake, Nagano, Japan, covering Yarigatake and Kita Hotakadake.
@@ -47,6 +56,7 @@ route_mountain table is only for connecting moutain and route tables in "many to
 
 ### What you can do
 
+UI for this API is GraphQL Playground(https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/).
 Here are the methods you can use.
 
 - `mountains` --- get all the mountains
@@ -105,15 +115,4 @@ After establishing the relation, you can extract the related data altogether lik
 }
 ```
 
-UI for this API is GraphQL Playground(https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/)
-
-![graphql](./images/screenshot_graphql.jpg)
-
-### Technologies
-
-- TypeGraphQL
-- Apollo server
-- Express
-- NodeJS
-- TypeORM
-- postgres
+Thank you for reading me.
