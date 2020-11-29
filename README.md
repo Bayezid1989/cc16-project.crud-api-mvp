@@ -15,11 +15,7 @@ Mountain table has id, name, elevation, coordinates and area.
 
 Example -->
 `6 | Aconcagua | 6960 | -32.653179, -70.010864 | Andes`
-` Column  |       Type        | Collation | Nullable |             Default
----------+-------------------+-----------+----------+----------------------------------   
- id      | integer           |           | not null | nextval('area_id_seq'::regclass)    
- name    | character varying |           | not null |
- country | character varying |           |          |`
+
 
 Area table has id and name
 
