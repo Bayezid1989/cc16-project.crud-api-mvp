@@ -1,7 +1,7 @@
 {
    "name": "cc16-project.api-mvp",
    "version": "0.0.1",
-   "description": "Awesome project developed with TypeORM.",
+   "description": "CRUD API using GraphQL and TypeORM",
    "devDependencies": {
       "@types/node": "^14.14.9",
       "@types/uuid": "^8.3.0",
