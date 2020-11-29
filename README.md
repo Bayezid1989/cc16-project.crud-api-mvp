@@ -54,10 +54,10 @@ route_mountain table is only for connecting moutain and route tables in "many to
   2 | Oku-Nishi Hotaka Juso |              25 |     5
 ```
 
-### What you can do
+### How to use
 
 UI for this API is GraphQL Playground(https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/).
-Here are the methods you can use.
+Here are the methods(resolvers) you can use.
 
 - `mountains` --- get all the mountains
 - `mountainByName` --- get a mountain matching the input name
@@ -81,6 +81,7 @@ Here are the methods you can use.
 
 - `addRouteMountain` --- insert a route-mountain pair
 
+You could refer to src/exampleGqls to see the method examples.
 When creating or updatig the mountain table with an areaID, the related moutain data will be added to the matched area's "moutains" array.
 Also when creating or updatig the area table with mountainIds, the areaId will be added to the matched moutains' "areaId".
 On the other hand, moutain and route relations will be made only if you execute "addRouteMountain".
