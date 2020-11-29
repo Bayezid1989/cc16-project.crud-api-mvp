@@ -103,6 +103,7 @@ After establishing the relation, you can extract the related data altogether lik
 ```
 
 UI is GrappfQL Playground(https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/)
+
 ![graphql](./images/screenshot_graphql.jpg)
 
 ### Technologies
