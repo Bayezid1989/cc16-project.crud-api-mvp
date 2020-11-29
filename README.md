@@ -71,7 +71,7 @@ Here are the methods you can use.
 When creating or updatig the mountain table with an areaID, the related moutain data will be added to the matched area's "moutains" array.
 Also when creating or updatig the area table with mountainIds, the areaId will be added to the matched moutains' "areaId".
 On the other hand, moutain and route relations will be made only if you execute "addRouteMountain".
-After establishing the relation, you can extract the connected data altogether like below.
+After establishing the relation, you can extract the related data altogether like below.
 
 ```sh
 {
