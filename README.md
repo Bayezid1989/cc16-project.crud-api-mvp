@@ -1,12 +1,15 @@
 # CC16 project CRUD API
 
 This was created during my time as a student at Code Chrysalis.
+Main focus is on manipulating database using GraphQL and TypeORM.
 
 ## Mountains API
 
+This beautiful view below is from the peak of Oku Hotakadake, Nagano, Japan, covering Yarigatake and Kita Hotakadake.
+
 ![mountain](./images/yarigatake.jpg)
 
-This API enebles you to CRUD (create, read, update and delete) mountain database.
+And this API enebles you to CRUD (create, read, update and delete) mountain database.
 Mountain database mainly has 3 tables, mountain, area and route.
 moutain table and area tables are connected in "many to one" relation.
 route_mountain table is only for connecting moutain and route tables in "many to many" relation.
@@ -102,7 +105,7 @@ After establishing the relation, you can extract the related data altogether lik
 }
 ```
 
-UI is GrappfQL Playground(https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/)
+UI for this API is GraphQL Playground(https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/)
 
 ![graphql](./images/screenshot_graphql.jpg)
 
