@@ -15,7 +15,7 @@
  * is to expose you to the idea of using a config file to govern the behaviour of a program.
  */
 
-export default {
+export = {
   type: "postgres",
   host: process.env.DB_HOST || "localhost",
   port: process.env.DB_PORT || 5432,
