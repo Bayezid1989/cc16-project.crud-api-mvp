@@ -56,6 +56,10 @@ route_mountain table is only for connecting moutain and route tables in "many to
 
 ### How to use
 
+Here is the link.
+
+- [Mountains API](https://mountaintypegraphql2020.herokuapp.com/graphql)
+
 UI for this API is GraphQL Playground(https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/).
 Here are the methods(resolvers) you can use.
 
