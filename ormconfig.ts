@@ -15,7 +15,7 @@
  * is to expose you to the idea of using a config file to govern the behaviour of a program.
  */
 
-export = {
+export default {
   type: "postgres",
   host: process.env.DB_HOST || "localhost",
   port: process.env.DB_PORT || 5432,
@@ -26,7 +26,7 @@ export = {
   logging: true,
   entities: ["src/entities/**/*.ts"],
   migrations: ["src/migrations/**/*.ts"],
-  subscribers: ["src/subscriber/**/*.ts"],
+  subscribers: ["src/subscribers/**/*.ts"],
   seeds: ["src/seeds/**/*.ts"],
   migrationsRun: false /* Disable auto-run migration */,
   cli: {
