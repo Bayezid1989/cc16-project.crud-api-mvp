@@ -30,6 +30,7 @@ import { createMountainsLoader } from "./utils/mountainsLoader";
       routesLoader: createRoutesLoader(),
       mountainsLoader: createMountainsLoader(),
     }),
+    playground: true,
   });
   apolloServer.applyMiddleware({ app, cors: false });
 
