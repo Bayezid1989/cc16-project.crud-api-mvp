@@ -22,6 +22,9 @@ export = {
   username: process.env.DB_USER || "mountains",
   password: process.env.DB_PASSWORD || "mountains",
   database: process.env.DB_NAME || "mountains",
+  ssl: {
+    rejectUnauthorized: false,
+  },
   synchronize: true,
   logging: true,
   entities: ["src/entities/**/*.ts"],
