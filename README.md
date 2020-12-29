@@ -10,7 +10,7 @@ Main focus is on manipulating database using GraphQL and TypeORM.
 - Express
 - NodeJS
 - TypeORM
-- postgres
+- PostgreSQL
 
 ## Mountains API
 
